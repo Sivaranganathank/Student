@@ -1,0 +1,195 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="..\css\fee.css"></link>
+</head>
+<body>
+<h1>Fee Details</h1>
+<table class="tab">
+<td>
+
+<label for="date" >Date:</label>
+<input type="date" class="date" name="date">
+
+<label for="date">From:</label>
+<input type="date" id="date" name="date" >
+
+  <label for="date">To:</label>
+<input type="date" id="date" name="date" >
+
+  <label for="col" class="schm">Scheme:</label>
+  <input type="text"  name="col" size="10px" >
+   
+</td>
+
+</table>
+<center>
+<table id="myTable">
+
+<tr>
+<th>Course</th>
+<th>Regular Fee</th>
+<th>Offer Fee</th>
+<th>Easy Pay</th>
+</tr>
+
+<tr>
+<td>DCA
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>JAVA
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>PYTHON
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>WEB DESIGN
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>COREL DRAW
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>SPOKEN ENGLISH
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>DBCS
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>DOT NET
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+
+<tr>
+<td>ANDROID DEVELOPMENT
+<td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+  
+  <td>
+  <input type="text"  name="col" size="15px" ></td>
+
+</tr>
+</table>
+<button onclick="myFunction()"><a href="..\html\fee.html">Submit</a></button>
+</center>
+
+<div class="but">
+<button  ><a href="../html/adex.html">BACK</a></button>
+</div>
+
+<div class="add">
+<button onclick="myCreateFunction()">ADD</button>
+</div>
+
+<div class="rem">
+<button   onclick="myDeleteFunction()">REMOVE</button>
+</div>
+
+<script>
+function myFunction() {
+  alert("Successfully Submitted!");
+}
+</script>
+
+<script>
+function myCreateFunction() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(10);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+   var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  cell1.innerHTML = "AUTO CAD";
+  cell2.innerHTML = "";
+   cell3.innerHTML = "";
+  cell4.innerHTML = "";
+}
+
+function myDeleteFunction() {
+  document.getElementById("myTable").deleteRow(10);
+}
+</script>
+
+
+
+</body>
+</html>
